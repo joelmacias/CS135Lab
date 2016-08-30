@@ -1,0 +1,15 @@
+Emacs Commands 
+	creating a file 
+		1. Open terminal 
+		2. Enter the following: emacs filename 
+		replace filename with whatever you want to name the file :)
+	save buffer: C-x C-s
+	exit emacs:  C-x C-c
+	move cursor to beginning of line: C-a
+	move cursor to end of line: C-e
+	kill-line: C-k
+	mark text: C-SPC
+	copy marked text: M-w
+	paste copied text: C-y 
+	turn on line numbers: M-x linum-mode
+	goto line: M-g g LINE NUMBER YOU WANT TO GO TO
