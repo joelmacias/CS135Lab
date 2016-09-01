@@ -1,4 +1,6 @@
 Emacs Commands 
+	C = control 
+	M = Esc 
 	creating a file 
 		1. Open terminal 
 		2. Enter the following: emacs filename 
