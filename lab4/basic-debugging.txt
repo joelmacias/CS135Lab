@@ -1,0 +1,36 @@
+Extremely Basic Debugging 
+
+0 - Compile with debugging symbols by using the -g flag
+	g++ -g <program-name.cpp> 
+
+1 - Start program with debugger 
+	gdb <executeabl-name>
+
+2 - Set the breakpoint where you want your program to stop running. 
+	break <insert-line-number-here> 
+
+3 - Running your program inside the debugger 
+	run
+
+4 - List code that precedes current breakpoint 
+	list
+
+5 - Step through your program line by line 
+	step 
+
+6 - Check data stored in local variables 
+	info locals 
+
+7 - Terminate program running in debugger 
+	kill 
+
+8 - List of breakpoints  
+	info breakpoints 
+
+8 - Exit debugger
+	quit
+
+
+
+
+More info: http://www.unknownroad.com/rtfm/gdbtut/gdbuse.html
