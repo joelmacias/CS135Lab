@@ -1,0 +1,82 @@
+1. 25 % 9 - 9 / 2 => 3
+	25 % 9 = 7
+	9 / 2 = 4
+	7 - 4 = 3
+
+2. 6 + 11 % 15 - pow(3,2) => 8.0
+	11 % 15 = 11
+	pow(3,2) = 9.0
+	6 + 11 = 17
+	17 - 9.0 = 8.0 
+
+3. 4 / 3 * 6 + 4.5 => 10.5
+	4/3 = 1 
+	1 * 6 = 6
+	6 + 4.5 = 10.5
+
+
+4. 4 * (2.0 / 5) + 2 => 3.6
+	2.0 / 5 = 0.4
+	4 * 0.4 = 1.6
+	1.6 + 2 = 3.6
+
+
+5. 101 / 5 % 7 - 3 * 2.0 => 0.0
+	101 / 5 = 20 
+	20 % 7 = 6
+	3 * 2.0 = 6.0
+	6 - 6.0 = 0.0
+
+
+Suppose a program contains the following declarations and assignment
+statements. Assume cmath has been included in the program.
+
+int x, y, z;
+double a, b;
+x = 17;
+y = 4;
+a = 5.8;
+
+Answer each of the following questions. Include a decimal if the value
+stored is floating-point.
+
+6. What is stored in z after the statement is executed?
+
+   z = 3 + x % 6;    z is 8
+		x % 6 = 5
+		3 + 5 = 8
+
+
+7. What is stored in b after the statement is executed?
+
+   b = int(sqrt(x+9)) + y * 2;   b is 13.0
+		int(sqrt(x+9)) = 5
+		y * 2 = 8
+		8 + 5 = 13
+		b is a double so 13.0 is stored 
+
+
+8. What is stored in b after the statement is executed?
+
+   b = y / 3 + 9.1;    b is 10.1
+		y / 3 = 1
+		1 + 9.1 = 10.1
+
+
+9. What is stored in z after the statement is executed?
+
+   z = a - x % y + (x - 11) * 0.5; z is 7
+		x % y = 1 
+		x - 11 = 6
+		6 * 0.5 = 3.0
+		a - 1 = 4.8
+		4.8 + 3.0 = 7.8 
+		.8 is truncated because z is of type int
+
+10. What is stored in z after the statment is executed?
+
+    z = double (y / x + 1) - a; z is -4
+		y / x + 1 = 1
+		double(5) = 5.0 
+		1 - 5.8 = -4.8
+		.8 is truncated because z is of type int 
