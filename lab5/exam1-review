@@ -1,0 +1,50 @@
+Exam 1 
+
+Keep in mind, this is not an exhaustive list of what might be on the exam.
+
+Review your class notes, and the lab notes I provided
+
+* You will have to hand-write a program(s) 
+	* They will be similar to your exercises, programming assignments, and programs in your notes 
+	* Know basic formulas for finding area/volume of shapes 
+	* Know how to work with percentages
+	
+* Lab questions 
+	* Know how to use the basic linux terminal commands 
+		* ls, cat, more, mkdir, rm, cd 
+
+* Structure of C++ Program 
+	Know the stucture of the c++ program and what each part does 
+
+	#include<iostream> 
+
+	using namespace std; 
+
+	int main(){
+	// your code goes here
+
+	return 0;
+	} 
+
+
+* c++ data types
+	* int float char double 
+		* know what they store, and how to do arithmetic with them 
+
+* Type casting 
+	* implicit, and explicit 
+
+* Be able to work with interactive input, and with output 
+	* Know how to use cout and cin
+
+* Library functions 
+	* Know the header files for the functions you have used for your programs, and those discussed in class
+	* cctype cmath iomanip iostream 
+
+	* Know what parameters type common functions you have used use
+		* pow(), sqrt(), toupper()
+
+* Formatting output 
+	* know how to format output using iomanip 
+
+* Review exercise 4, find similar problems in your book to work on 
