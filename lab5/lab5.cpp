@@ -39,37 +39,34 @@ int main(){
     cout << fixed << setprecision(4);
     
     // Longest label is 28 characters, add 1 to allow a blank space for all lables. We can assume the largest number will be 7
-    cout << left << setw(29) << "length:" << right << setw(7) << length << " in" << endl;
+    cout << "length:" << length << " in" << endl;
     
-    cout << left << setw(29) << "Width:" << right << setw(7) << width << " in" << endl;
+    cout << "Width:" << width << " in" << endl;
     
-    cout << left << setw(29) << "Height:" << right << setw(7) << height << " in" << endl;
-    
-    cout << left << setw(29) << "Volume of rectangular prism:" << right << setw(7) << length * width * height << " cu in" <<endl;
+    cout <<  "Height:" << height << " in" << endl;
+   
+    cout << "Volume of rectangular prism:" << " cu in" <<endl;
     
     cout << endl;
     
     cout << "Receipt" << endl;
     
     cout << fixed << setprecision(2);
+
+	double callOfDuty = 59.99, mountainDew = 1.29, doritos = 1.99, tax = .0810;
     
-    double callOfDuty = 59.99, mountainDew = 1.29, doritos = 1.99, tax = .0810;
+   
+    cout << "Call of Duty 19: Ancient Warfare" << "$"  << callOfDuty << endl;
     
-    // Longest label is 32 characters, add at least 1 more to allow a blank space for all lables. We can assume the largest number will be 7
-    cout << left << setw(33) << "Call of Duty 19: Ancient Warfare" << "$" << right << setw(7) << callOfDuty << endl;
+    cout << "Mountain Dew" << "$"  << mountainDew << endl;
     
-    cout << left << setw(33) << "Mountain Dew" << "$" << right << setw(7) << mountainDew << endl;
+    cout << "Doritos" << "$" << doritos << endl;
     
-    cout << left << setw(33) << "Doritos" << "$" << right << setw(7) << doritos << endl;
+    cout  << endl;
     
-    cout << setfill('.') << setw(33 + 7 + 1 ) << "" << endl;
+
     
-    cout << setfill(' ');
-    
-    cout << left << setw(33) << "Total Cost" << "$" << right << setw(7) << ((mountainDew + callOfDuty + doritos) * tax) + mountainDew + callOfDuty + doritos << endl;
-    
-    
-    
-    
+    cout << "Total Cost" << "$"  << ((mountainDew + callOfDuty + doritos) * tax) + mountainDew + callOfDuty + doritos << endl;
+         
     return 0;
 }
