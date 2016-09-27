@@ -1,0 +1,91 @@
+Resources
+ a) https://git-scm.com/book/en/v1/Getting-Started
+ b) http://rogerdudler.github.io/git-guide/
+ c) http://ohshitgit.com
+ d) https://www.codecademy.com/courses/learn-git/lessons/git-workflow/exercises/git-init?action=lesson_resume
+
+
+
+0. Enter the following command into the terminal:
+	cd 
+
+1. create a new folder by entering the following command:
+	mkdir git_fresh
+
+
+Step 2 copies the CS135Lab folder from my github to your local machine 
+
+2. If you have not downloaded the CS135Lab folder from https://github.com/joelmacias/CS135Lab then
+	do the following: 
+	a) In the terminal enter:
+		git clone https://github.com/joelmacias/CS135Lab.git
+
+Step 3 updates the CS135Lab folder to reflect the latest changes i've made since our last meeting
+
+3. If you have downloaded the CS135Lab folder from https://github.com/joelmacias/CS135Lab then
+	do the following: 
+	a) change directories so that you are in the CS135Lab folder 
+	b) Once inside the CS135Lab folder enter the following command into the terminal:
+		git pull origin master 
+
+4. Once you have done step 2 or step 3 change directories into the CS135Lab folder. 
+	If you did step 3 you will already be in the CS135Lab folder. 
+
+5. Now lets copy the lab5 folder contnents that is inside the CS135Lab folder into the git_fresh 
+	folder.
+	To do so do the following:
+	a) In the terminal enter:
+		cp lab5/* ~/git_fresh 
+
+6. Change directories so that you are in the git_fresh folder 
+
+Now for the actual git stuff...
+
+7. Create an empty git repository:
+	a) In the terminal enter:
+		git init  
+
+8. To check the status of the git repo:
+	a)	In the terminal enter:
+		git status
+
+9. We add files to the staging area once we are satisfied with the changes made to the file:
+		In the terminal enter:
+			git add lab5.cpp 	
+
+10. We commit when we want to record changes to the repository, this will commit all files 
+	in the staging area:
+		git commit -m "Added lasers to AI." 
+
+We can use git to experiment and add featues to our code without modifitying our original codebase. We do this by
+creating branches were we can expirement with our code 
+
+11. To list existing branches:
+	In the terminal enter:
+		git branch
+
+Currenlty only the master branch exists, this is where we will merge our branches 
+
+12. Lets create a new branch to add some formatting to our sweet code. The following command will create a new 
+branch and switch to it
+	In the terminal enter:
+		git checkout -b formatting
+
+
+13. Lets break our code, remove int main() from lab5.cpp, then save the file. Now if we try
+compile our program we will get a lot of errors. To check the changes we made we use the 
+'diff' command 
+	In the terminal enter:
+		git diff -- lab5.cpp
+
+14. Now discard the changes made by using the checkout command, this will restore the file to
+	the version that was last commited 
+		git checkout -- lab5.cpp
+
+15. Now lets add formatting...
+
+16 Now that the formatting is done lets merge the formatting branch with our master branch
+	In the terminal enter:
+		git checkout master
+		git merge formatting
+		git branch -d formatting
