@@ -3,6 +3,7 @@ Resources
  b) http://rogerdudler.github.io/git-guide/
  c) http://ohshitgit.com
  d) https://www.codecademy.com/courses/learn-git/lessons/git-workflow/exercises/git-init?action=lesson_resume
+f) https://education.github.com/pack
 
 
 
