@@ -38,14 +38,14 @@ int main(){
     // All floating point types will be displayed with 4 numbers after the decimal point
     cout << fixed << setprecision(4);
     
-    // Longest label is 28 characters, add 1 to allow a blank space for all lables. We can assume the largest number will be 7
-    cout << left << setw(29) << "length:" << right << setw(7) << length << " in" << endl;
+    // Longest label is 28 characters, add 1 to allow a blank space for all lables. We can assume the largest number will be 15 
+    cout << left << setw(29) << "length:" << right << setw(15) << length << " in" << endl;
     
-    cout << left << setw(29) << "Width:" << right << setw(7) << width << " in" << endl;
+    cout << left << setw(29) << "Width:" << right << setw(15) << width << " in" << endl;
     
-    cout << left << setw(29) << "Height:" << right << setw(7) << height << " in" << endl;
+    cout << left << setw(29) << "Height:" << right << setw(15) << height << " in" << endl;
     
-    cout << left << setw(29) << "Volume of rectangular prism:" << right << setw(7) << length * width * height << " cu in" <<endl;
+    cout << left << setw(29) << "Volume of rectangular prism:" << right << setw(15) << length * width * height << " cu in" <<endl;
     
     cout << endl;
     
