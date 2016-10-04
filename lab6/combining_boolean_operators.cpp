@@ -23,7 +23,7 @@ int main(){
 
 	int totalScore = 0;
 	cout << "Depending on what value you expect the expression to return, enter true or false.\n '1' for true, and '0' for false, without the single quotes.\n" <<endl;
- 	string correct = "\nDaaaaamnnn <insertYourNameHere>, back at it again with that correct logic! You are correct!\n";
+ 	string correct = "\nCorrect!\n";
 	string incorrect = "\nBad programmer, no diet coke! That is incorrect.\n";
 
 
