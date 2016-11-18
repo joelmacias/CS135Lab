@@ -18,17 +18,6 @@ Array size is fixed at compile time
 
 Every time a program is ran the size of the array is fixed 
 
-This essentially means you have to know the data set size you are working with before execution 
-
-int arraySize;
-cout <<"Enter the size of the array: " << endl;
-cin >> arraySize;
-
-int list[arraySize];
- 
-
-The above program will not work because memory allocation for 
-static arrays is dealt with during compile time (g++ program.cpp) 
 
 Arrays cannot be compared or assigned. Only the individual elements 
 of the array can compared or assigned.
